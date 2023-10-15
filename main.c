@@ -31,7 +31,5 @@ int main(void) {
 	printf("square result:%i\n",square(n) );
 	
 	printf("get_max result:%i\n",get_max(a,b) );
-
- 
 	return 0;
 }
