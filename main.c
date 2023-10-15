@@ -2,38 +2,36 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-int factorial(int n)
-{	
-	int i;
-	int res=1;
-	for (i=1;i<=n;i++)
-		res=res*i;
+int sumTwo(int a, int b)
+{
+	return(a+b);
+}
 	
-	return res;
+int square(int n)
+{
+	return(n*n);
 }
 
-int combination(int n, int r)
-{ 
-	int div1,div2;
-
-	div1=factorial(n);
-	div2=factorial(n-r)*factorial(r);
-
-	return (div1/div2);
-}
-
-
-int main(int argc, char *argv[]) {
-	int n,r;
-	int result;
-	 
+int get_max(int x, int y)
+{	if (x>y)
+		return x;
 	
-	printf("input n:");
-	scanf("%d",&n);
-	printf("input r:"); 
-	scanf("%d", &r);
+		return y;
+	}
+
+int main(void) {
+	int a,b;
+	int n;
 	
-	result=combination(n,r);
-	printf("result is %i\n", result); 
+	a=3;
+	b=10;
+	printf("sunTwo result:%i\n",sumTwo(a,b) );
+	
+	n=4;
+	printf("square result:%i\n",square(n) );
+	
+	printf("get_max result:%i\n",get_max(a,b) );
+
+ 
 	return 0;
 }
