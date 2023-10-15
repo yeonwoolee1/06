@@ -22,10 +22,6 @@ int combination(int n, int r)
 	return (div1/div2);
 }
 
-int get_integer()
-{ 
-}
-
 int main(int argc, char *argv[]) {
 	int n,r;
 	int result;
